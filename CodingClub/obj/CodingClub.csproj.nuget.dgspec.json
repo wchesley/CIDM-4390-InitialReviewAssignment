@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\walker\\Documents\\GitHub\\CIDM-4390-InitialReviewAssignment\\CodingClub\\CodingClub.csproj": {}
+    "C:\\Users\\Walker\\Documents\\Projects\\CIDM-4390-InitialReviewAssignment\\CodingClub\\CodingClub.csproj": {}
   },
   "projects": {
-    "C:\\Users\\walker\\Documents\\GitHub\\CIDM-4390-InitialReviewAssignment\\CodingClub\\CodingClub.csproj": {
+    "C:\\Users\\Walker\\Documents\\Projects\\CIDM-4390-InitialReviewAssignment\\CodingClub\\CodingClub.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\walker\\Documents\\GitHub\\CIDM-4390-InitialReviewAssignment\\CodingClub\\CodingClub.csproj",
+        "projectUniqueName": "C:\\Users\\Walker\\Documents\\Projects\\CIDM-4390-InitialReviewAssignment\\CodingClub\\CodingClub.csproj",
         "projectName": "CodingClub",
-        "projectPath": "C:\\Users\\walker\\Documents\\GitHub\\CIDM-4390-InitialReviewAssignment\\CodingClub\\CodingClub.csproj",
-        "packagesPath": "C:\\Users\\walker\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\walker\\Documents\\GitHub\\CIDM-4390-InitialReviewAssignment\\CodingClub\\obj\\",
+        "projectPath": "C:\\Users\\Walker\\Documents\\Projects\\CIDM-4390-InitialReviewAssignment\\CodingClub\\CodingClub.csproj",
+        "packagesPath": "C:\\Users\\Walker\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Walker\\Documents\\Projects\\CIDM-4390-InitialReviewAssignment\\CodingClub\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\walker\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Walker\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -76,7 +76,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.102\\RuntimeIdentifierGraph.json"
         }
       }
     }
