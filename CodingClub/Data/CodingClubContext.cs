@@ -10,8 +10,9 @@ namespace CodingClub.Data
             : base(options)
             {
             }
-            public DbSet<CodingClub.Modles.ClubMember> ClubMember {get; set; }
-            public DbSet<CodingClub.Modles.Content> Content {get; set; }
-            public DbSet<CodingClub.Modles.Teams> Teams {get; set; }
+            public DbSet<ClubMember> ClubMember {get; set; }
+            public DbSet<Content> Content {get; set; }
+            public DbSet<Teams> Teams {get; set; }
+
     }
 }
