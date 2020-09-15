@@ -12,6 +12,6 @@ namespace CodingClub
         public string ContentTitle {get; set;}
         
         //Avoided naming the bulk of the contents property the same as the class name: 
-        public string FullContent {get; set;}
+        public string ContentBody {get; set;}
     }
 }
