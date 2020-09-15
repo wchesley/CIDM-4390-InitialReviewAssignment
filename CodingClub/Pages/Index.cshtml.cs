@@ -12,7 +12,8 @@ namespace CodingClub.Pages
     public class IndexModel : PageModel
     {
         private readonly ILogger<IndexModel> _logger;
-        private readonly CodingClub.Data.CodingClubContext _context; 
+        private readonly CodingClub.Data.CodingClubContext _context;
+        public IQueryable<Content> content; 
 
         public IndexModel(ILogger<IndexModel> logger, CodingClub.Data.CodingClubContext context)
         {
@@ -22,7 +23,7 @@ namespace CodingClub.Pages
 
         public void OnGet()
         {
-            IQueryable<ClubMember> members = from m in _context.ClubMember select m; 
+            content = from c in _context.Content select c; 
         }
     }
 }
