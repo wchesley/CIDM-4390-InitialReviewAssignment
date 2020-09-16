@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.Extensions.Logging;
 using System.ComponentModel.DataAnnotations;
-using Microsoft.EntityFrameworkCore; 
+using Microsoft.EntityFrameworkCore;
 
 namespace CodingClub.Pages
 {
@@ -26,9 +26,9 @@ namespace CodingClub.Pages
         public async Task<IActionResult> OnGet()
         {
             TeamData = await (from t in _context.Teams
-            orderby t.TeamID
-            select t).ToListAsync();
-            return Page(); 
+                              orderby t.TeamID
+                              select t).ToListAsync();
+            return Page();
         }
     }
 }
