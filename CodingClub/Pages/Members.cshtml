@@ -27,7 +27,7 @@
                     <td>@item.DuesPaid</td>
                     <td>
                         <div class="delete-section" >
-                            <a class="delete-link btn btn-danger" href="@Url.Action("Delete", new {id = item.MemberID})">Delete</a>
+                            <a class="delete-link btn btn-danger" href="@Url.Action("Delete", new {MemberId = item.MemberID})">Delete</a>
                             <div class="btn btn-primary delete-confirm" style="display:none" data-delete-id="@item.MemberID">Confirm Delete</div>
                         </div>
                     </td>
@@ -57,7 +57,7 @@
                 confirmButton.hide();
                 $.post(
                     '@Url.Action("Delete")',
-                    AddAntiForgeryToken({ id: confirmButton.attr('data-delete-id') }))
+                    AddAntiForgeryToken({ MemberId: confirmButton.attr('data-delete-id') }))
                    .done(function () {
                        var parentRow = deleteLink.parents("tr:first");
                        parentRow.fadeOut('fast', function () {
