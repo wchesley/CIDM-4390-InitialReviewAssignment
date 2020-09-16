@@ -8,7 +8,7 @@ namespace CodingClub
     {
         [Key]
         public int ContentID {get; set;}
-        public ClubMember Creator {get; set;}
+        public ClubMember Author {get; set;}
         public string ContentTitle {get; set;}
         
         //Avoided naming the bulk of the contents property the same as the class name: 
