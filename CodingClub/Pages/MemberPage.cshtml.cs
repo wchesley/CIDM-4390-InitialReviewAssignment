@@ -27,6 +27,7 @@ namespace CodingClub.Pages
         public string clubTitle { get; set; }
         [BindProperty]
         [Required]
+        //TODO: Fix DuesPaid check box, either way it returns false at the moment
         public bool duesPaid { get; set; }
 
         public MemberPage(ILogger<MemberPage> logger, CodingClub.Data.CodingClubContext context)
