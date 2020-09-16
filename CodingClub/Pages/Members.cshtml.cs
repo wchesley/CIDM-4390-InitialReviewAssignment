@@ -25,7 +25,7 @@ namespace CodingClub.Pages
             members = from m in _context.ClubMember select m; 
         }
 
-        //TODO: FIX on post, ID is not being properly passed back to OnPost method from cshtml page... 
+        //when passing the id back from JS script, the var apparently has to be the same name the model function is looking for: 
         public async Task<IActionResult> OnPost(int? MemberId)
         {
             _logger.LogInformation($"On post fired...{MemberId.ToString()}");
