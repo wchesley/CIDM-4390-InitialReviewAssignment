@@ -1,8 +1,30 @@
 @page
 @model Team
 @{
-    ViewData["Title"] = "Team";
+    ViewData["Title"] = "Teams";
 }
 <div class="container">
-    <h1>Team page</h1>
+    <h1>Teams page!</h1>
+    <table class="table">
+        <thead>
+            <th>Team Number: </th>
+            <th>Team Leader: </th>
+            <th>Project Name: </th>
+        </thead>
+        <tbody>
+            @if (Model.TeamData == null)
+            {
+                <tr>No Teams Available</tr>
+            }
+            else
+            {
+                @foreach (var item in @Model.TeamData)
+                {
+                    <tr>@item.TeamID</tr>
+                    <tr>@item.TeamLeader</tr>
+                    <tr>@item.ProjectName</tr>
+                }
+            }
+        </tbody>
+    </table>
 </div>
