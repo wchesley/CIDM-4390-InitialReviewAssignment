@@ -6,12 +6,14 @@
 
 <div class="text-center">
     <h1 class="display-4">Welcome to the Coding Club!</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <p>Learn about the club and <a asp-page="AddMember">sign up here!</a></p>
 </div>
 <div class="container">
-    @foreach (var item in @Model.content)
+    <h1>What's going on in the club?</h1>
+    @* @foreach (var item in @Model.content)
     {
         <h2>@item.ContentTitle</h2>
         <p>@item.ContentBody</p>
-    }
+        <sub>@item.Author</sub>
+    } *@
 </div>

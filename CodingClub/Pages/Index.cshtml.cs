@@ -23,7 +23,15 @@ namespace CodingClub.Pages
 
         public void OnGet()
         {
-            content = from c in _context.Content select c; 
+            try
+            {
+                //content = from c in _context.Content select c; 
+            }
+            catch(Exception e)
+            {
+                _logger.LogWarning(e, "Error reading content"); 
+            }
+            
         }
     }
 }
