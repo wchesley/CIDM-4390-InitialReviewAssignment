@@ -14,7 +14,7 @@ namespace CodingClub.Migrations
                         .Annotation("Sqlite:Autoincrement", true),
                     CreatorMemberID = table.Column<int>(nullable: true),
                     ContentTitle = table.Column<string>(nullable: true),
-                    FullContent = table.Column<string>(nullable: true)
+                    ContentBody = table.Column<string>(nullable: true)
                 },
                 constraints: table =>
                 {

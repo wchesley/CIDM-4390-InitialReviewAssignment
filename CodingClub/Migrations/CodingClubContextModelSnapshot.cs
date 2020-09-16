@@ -56,18 +56,18 @@ namespace CodingClub.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
 
-                    b.Property<string>("ContentTitle")
-                        .HasColumnType("TEXT");
-
-                    b.Property<int?>("CreatorMemberID")
+                    b.Property<int?>("AuthorMemberID")
                         .HasColumnType("INTEGER");
 
-                    b.Property<string>("FullContent")
+                    b.Property<string>("ContentBody")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("ContentTitle")
                         .HasColumnType("TEXT");
 
                     b.HasKey("ContentID");
 
-                    b.HasIndex("CreatorMemberID");
+                    b.HasIndex("AuthorMemberID");
 
                     b.ToTable("Content");
                 });
@@ -103,9 +103,9 @@ namespace CodingClub.Migrations
 
             modelBuilder.Entity("CodingClub.Content", b =>
                 {
-                    b.HasOne("CodingClub.ClubMember", "Creator")
+                    b.HasOne("CodingClub.ClubMember", "Author")
                         .WithMany("CreatedContent")
-                        .HasForeignKey("CreatorMemberID");
+                        .HasForeignKey("AuthorMemberID");
                 });
 
             modelBuilder.Entity("CodingClub.Teams", b =>
