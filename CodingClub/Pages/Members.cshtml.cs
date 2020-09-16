@@ -36,6 +36,7 @@ namespace CodingClub.Pages
             ClubMember MemberToDelete = await _context.ClubMember.FindAsync(MemberId);
             if(MemberToDelete == null)
             {
+                _logger.LogWarning($"Club member not found in database \nID: {MemberId}"); 
                 return NotFound(); 
             }
             else
