@@ -6,22 +6,24 @@
 <div class="containter">
     <h1>Edit @Model.SingleMember.FName @Model.SingleMember.LName</h1>
     <form method="POST" class="form-control">
-        <label asp-for="fName" class="control-label">First Name: </label>
-        <input type="text" asp-for="fName" value="@Model.SingleMember.FName"/>
-        <span asp-validation-for="fName" class="text-danger"></span>
-        
-        <label asp-for="lName" class="control-label">Last Name: </label>
-        <input type="text" asp-for="lName" value="@Model.SingleMember.LName"/>
-        <span asp-validation-for="lName" class="text-danger"></span>
-
-        <label asp-for="clubTitle" class="control-label">Club Title:  </label>
-        <input type="text" asp-for="clubTitle" value="@Model.SingleMember.ClubTitle"/>
-        <span asp-validation-for="clubTitle" class="text-danger"></span>
-
-        <label asp-for="duesPaid" class="control-label">Dues Paid? </label>
-        <input type="checkbox" asp-for="duesPaid" value="@Model.SingleMember.DuesPaid"/>
-        <span asp-validation-for="duesPaid" class="text-danger"></span>
-
-        <input type="submit" class="btn btn-primary" value="Save Changes" asp-route-MemberId="@Model.SingleMember.MemberID"/>
+        <div class="form-control">
+            <label asp-for="fName" class="control-label">First Name: </label>
+            <input type="text" asp-for="fName" value="@Model.SingleMember.FName"/>
+            <span asp-validation-for="fName" class="text-danger"></span>
+            <br />
+            <label asp-for="lName" class="control-label">Last Name: </label>
+            <input type="text" asp-for="lName" value="@Model.SingleMember.LName"/>
+            <span asp-validation-for="lName" class="text-danger"></span>
+            <br />
+            <label asp-for="clubTitle" class="control-label">Club Title:  </label>
+            <input type="text" asp-for="clubTitle" value="@Model.SingleMember.ClubTitle"/>
+            <span asp-validation-for="clubTitle" class="text-danger"></span>
+            <br />
+            <label asp-for="duesPaid" class="control-label">Dues Paid? </label>
+            <input type="checkbox" asp-for="duesPaid" value="@Model.SingleMember.DuesPaid"/>
+            <span asp-validation-for="duesPaid" class="text-danger"></span>
+            <br />
+            <input type="submit" class="btn btn-primary" value="Save Changes" asp-route-MemberId="@Model.SingleMember.MemberID"/>
+        </div>
     </form>
 </div>
